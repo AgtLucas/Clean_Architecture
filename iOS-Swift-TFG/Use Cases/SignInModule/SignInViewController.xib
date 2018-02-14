@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="iOS_Swift_TFG" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linkedIn-icon" translatesAutoresizingMaskIntoConstraints="NO" id="yp5-eQ-Hjk">
+                    <rect key="frame" x="130.5" y="80" width="114" height="91"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="QQI-Wp-utk"/>
+                        <constraint firstAttribute="height" constant="91" id="ofl-jz-rMi"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqB-9c-NUW">
+                    <rect key="frame" x="0.0" y="578" width="375" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                    <state key="normal" title="About us">
+                        <color key="titleColor" red="0.0" green="0.60784313729999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-ni-8Zu" userLabel="Sign in with LinkedIn">
+                    <rect key="frame" x="80" y="447" width="215" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="Wt9-al-I4H"/>
+                        <constraint firstAttribute="width" constant="215" id="pld-t3-ZDV"/>
+                    </constraints>
+                    <state key="normal" image="sign-in-large-default"/>
+                    <connections>
+                        <action selector="signInButtonPressed:" destination="-1" eventType="touchUpInside" id="Wsh-Ea-bkw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HqB-9c-NUW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Dw-iu-DhO"/>
+                <constraint firstItem="ugm-ni-8Zu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JiJ-dT-zUk"/>
+                <constraint firstAttribute="trailing" secondItem="HqB-9c-NUW" secondAttribute="trailing" id="V7N-yd-t4l"/>
+                <constraint firstItem="HqB-9c-NUW" firstAttribute="top" secondItem="ugm-ni-8Zu" secondAttribute="bottom" constant="90" id="fbI-Sc-Y2w"/>
+                <constraint firstAttribute="bottom" secondItem="HqB-9c-NUW" secondAttribute="bottom" constant="48" id="nAI-ky-bAj"/>
+                <constraint firstItem="yp5-eQ-Hjk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="ogv-Fw-vJJ"/>
+                <constraint firstItem="yp5-eQ-Hjk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tXE-ad-NAK"/>
+            </constraints>
+            <point key="canvasLocation" x="166" y="350"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="linkedIn-icon" width="59" height="54"/>
+        <image name="sign-in-large-default" width="215" height="40"/>
+    </resources>
+</document>

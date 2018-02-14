@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginWithLinkedInViewController" customModule="iOS_Swift_TFG" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="amD-4v-dDh"/>
+                <outlet property="webView" destination="iu8-K1-O70" id="ZA1-EO-1c3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iu8-K1-O70">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iu8-K1-O70" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1SN-kp-wDG"/>
+                <constraint firstAttribute="trailing" secondItem="iu8-K1-O70" secondAttribute="trailing" id="3hX-Kw-yuf"/>
+                <constraint firstItem="iu8-K1-O70" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Iw0-JB-D3s"/>
+                <constraint firstAttribute="bottom" secondItem="iu8-K1-O70" secondAttribute="bottom" id="XEN-z1-IBf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
