@@ -1,2 +1,2 @@
-# iOS_Swift_CleanArchitecture
+# Clean Architecture
 A Clean Architecture interpretation with Swift
